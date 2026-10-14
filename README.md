@@ -26,3 +26,10 @@ The built-in `String.prototype.indexOf` is fine for casual use but gives you no 
 - `buildGoodSuffixTable(needle: string): Int32Array` — shift amounts indexed by mismatch position.
 
 Run the tests with `node --test`.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
