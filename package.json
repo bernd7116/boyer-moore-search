@@ -1,6 +1,6 @@
 {
   "name": "boyer-moore-search",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Locates substring occurrences using bad-character and good-suffix heuristics for fast exact string matching.",
   "type": "module",
   "main": "src/index.js",
